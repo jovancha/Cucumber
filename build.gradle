@@ -57,7 +57,8 @@ task cucumberCli() {
 			args = [
 					'--plugin', 'pretty',
 					'--plugin', 'com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:',
-					'--glue', 'com/digitalautomationsolution/dascucumber/stepDefinitions',
+					'--glue', 'com/cucumbertest/cucumber/stepDefinitions',
+					'--glue', 'com/cucumbertest/cucumber/cucumberConfig',
 					'src/test/resources/featureFiles'
 			]
 		}
